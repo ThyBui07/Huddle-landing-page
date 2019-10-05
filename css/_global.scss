@@ -1,0 +1,77 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+// h1 {
+//   font-family: $font-title;
+//   position: relative;
+//   font-size: 34px;
+//   line-height: 1;
+//   padding-left: 50px;
+
+//   &:before {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     width: 50px;
+//     height: 32px;
+//     background-image: url('/images/logo.svg');
+//     background-size: 200px;
+//     background-position: left center;
+//     background-repeat: no-repeat;
+//   }
+// }
+body {
+  line-height: 1.4;
+  font-family: $font-body;
+  font-size: 16px;
+}
+a, a:visited {
+  text-decoration: none;
+}
+header {
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 130px;
+  }
+  //image element which is direct child of header
+  > img {
+    width: 120px;
+
+    @media screen and (min-width: 1024px) {
+      width: 200px;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1024px) {
+    justify-content: flex-end;
+  }
+  > a {
+    margin-right: 16px;
+
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
+
+  i.fab {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+}

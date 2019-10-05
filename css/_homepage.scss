@@ -1,0 +1,77 @@
+body{
+  background-color: $purple;
+  color: #ffffff;
+  background-image: url('/images/bg-mobile.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 70px 40px 70px 40px;
+
+
+  @media screen and (min-width: 1024px) {
+    //starting at min 640px up to infinite: load bg desktop
+  background-image: url('/images/bg-desktop.svg');
+  padding: 60px 80px 40px 80px;
+  }
+}
+main{
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1024px) {
+  margin-bottom: 26px;
+  display:grid;
+  grid-template-columns: repeat( 2, minmax(250px, 1fr));
+  }
+}
+.heroImage {
+
+  @media screen and (min-width: 1023px) {
+
+    }
+  img {
+    width: 100%;
+  }
+}
+
+.heroText {
+  line-height: 2.0;
+  text-align: center;
+  @media screen and (min-width: 1024px) {
+    padding-left: 60px;
+    text-align: left;
+    }
+}
+
+h1 {
+  line-height: 1.5;
+  font-family: $font-title;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+
+  @media screen and (min-width: 1024px) {
+    text-align:left;
+    font-size: 32px;
+    line-height: 1.3;
+    }
+}
+
+a.register {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 250px;
+  margin-top: 26px;
+  // margin: 20px 0px 20px 0px;
+  padding: 20px;
+  line-height: 1;
+  text-align: center;
+  background: white;
+  color: $purple;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px darken($purple, 20%);
+
+  @media screen and (min-width: 1024px) {
+    padding: 20px 65px;
+    min-width: 200px;
+  }
+}
