@@ -1,7 +1,7 @@
 body{
   background-color: $purple;
   color: #ffffff;
-  background-image: url('/images/bg-mobile.svg');
+  background-image: url('../images/bg-mobile.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -10,7 +10,7 @@ body{
 
   @media screen and (min-width: 1024px) {
     //starting at min 640px up to infinite: load bg desktop
-  background-image: url('/images/bg-desktop.svg');
+  background-image: url('../images/bg-desktop.svg');
   padding: 60px 80px 40px 80px;
   }
 }

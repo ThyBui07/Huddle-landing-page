@@ -83,7 +83,7 @@ footer i.fab {
 body {
   background-color: #674bb1;
   color: #ffffff;
-  background-image: url("/images/bg-mobile.svg");
+  background-image: url("../images/bg-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -92,7 +92,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   body {
-    background-image: url("/images/bg-desktop.svg");
+    background-image: url("../images/bg-desktop.svg");
     padding: 60px 80px 40px 80px;
   }
 }
